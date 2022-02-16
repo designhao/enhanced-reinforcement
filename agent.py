@@ -1,2 +1,2 @@
 #!/usr/bin/env python
-# Four spaces as
+# Four spaces as indentation [no tabs
