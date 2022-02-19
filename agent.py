@@ -4,4 +4,6 @@ import math, copy, random, logging
 from common import *
 from util import *
 
-class Ag
+class Agent:
+
+    def __init
