@@ -6,4 +6,5 @@ from util import *
 
 class Agent:
 
-    def __init
+    def __init__(self):
+        self
