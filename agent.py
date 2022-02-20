@@ -7,4 +7,4 @@ from util import *
 class Agent:
 
     def __init__(self):
-        self
+        self.s = self.a = self
