@@ -8,4 +8,5 @@ class Agent:
 
     def __init__(self):
         self.s = self.a = self.r = None
-        self.utility_table 
+        self.utility_table = {}
+        sel
