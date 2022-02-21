@@ -9,4 +9,6 @@ class Agent:
     def __init__(self):
         self.s = self.a = self.r = None
         self.utility_table = {}
-        self.prev_utility_tabl
+        self.prev_utility_table = {}
+
+    def reset(s
