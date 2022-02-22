@@ -11,4 +11,4 @@ class Agent:
         self.utility_table = {}
         self.prev_utility_table = {}
 
-    def reset(s
+    def reset(self, env):
