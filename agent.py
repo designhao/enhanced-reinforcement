@@ -15,4 +15,5 @@ class Agent:
         self.s = env.init
 
     def train(self, env):
-        
+        """
+        Execu
