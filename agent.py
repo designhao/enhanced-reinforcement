@@ -16,4 +16,4 @@ class Agent:
 
     def train(self, env):
         """
-        Execu
+        Execute MAX_TRAINING_EP
