@@ -14,4 +14,5 @@ class Agent:
     def reset(self, env):
         self.s = env.init
 
-    def t
+    def train(self, env):
+        
