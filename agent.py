@@ -17,4 +17,6 @@ class Agent:
     def train(self, env):
         """
         Execute MAX_TRAINING_EPISODES rounds or until converge.
-        
+        """
+
+        logging.get
