@@ -19,4 +19,4 @@ class Agent:
         Execute MAX_TRAINING_EPISODES rounds or until converge.
         """
 
-        logging.getLogger().debug("It will converg
+        logging.getLogger().debug("It will converge at %f", CONVERGE
