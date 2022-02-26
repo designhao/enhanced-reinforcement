@@ -24,4 +24,4 @@ class Agent:
         self.reset(env)
 
         executions = 0
-        w
+        while executions
