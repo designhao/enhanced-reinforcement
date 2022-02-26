@@ -21,4 +21,6 @@ class Agent:
 
         logging.getLogger().debug("It will converge at %f", CONVERGENCE_THRESHOLD)
 
-     
+        self.reset(env)
+
+   
