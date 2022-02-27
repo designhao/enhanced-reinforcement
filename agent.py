@@ -24,4 +24,6 @@ class Agent:
         self.reset(env)
 
         executions = 0
-        while executions < MAX_TRAINING_EPISODE
+        while executions < MAX_TRAINING_EPISODES:
+
+            self
