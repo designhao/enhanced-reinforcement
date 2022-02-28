@@ -28,4 +28,4 @@ class Agent:
 
             self.prev_s, self.prev_a, self.prev_r = self.s, self.a, self.r
 
-           
+            self.run_train(en
