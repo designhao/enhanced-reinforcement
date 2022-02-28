@@ -26,4 +26,6 @@ class Agent:
         executions = 0
         while executions < MAX_TRAINING_EPISODES:
 
-            self.prev_s, self.prev_a, self.prev_r = self.s, self.
+            self.prev_s, self.prev_a, self.prev_r = self.s, self.a, self.r
+
+           
