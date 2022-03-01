@@ -32,4 +32,5 @@ class Agent:
 
             if env.terminal(self.s):
 
-                executio
+                executions += 1
+        
