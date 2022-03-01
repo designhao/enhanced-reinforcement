@@ -30,4 +30,6 @@ class Agent:
 
             self.run_train(env)
 
-            if env.
+            if env.terminal(self.s):
+
+  
