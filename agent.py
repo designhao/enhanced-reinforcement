@@ -34,4 +34,4 @@ class Agent:
 
                 executions += 1
                 
-               
+                self.prev
