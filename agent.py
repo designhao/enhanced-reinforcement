@@ -34,4 +34,4 @@ class Agent:
 
                 executions += 1
                 
-                self.prev
+                self.prev_s = self.prev_a 
