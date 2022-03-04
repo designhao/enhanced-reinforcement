@@ -37,4 +37,5 @@ class Agent:
                 self.prev_s = self.prev_a = self.prev_r = self.s = self.a = self.r = None
                 self.reset(env)
 
-                if self.c
+                if self.converged():
+       
