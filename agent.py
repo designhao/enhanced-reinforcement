@@ -35,4 +35,6 @@ class Agent:
                 executions += 1
                 
                 self.prev_s = self.prev_a = self.prev_r = self.s = self.a = self.r = None
-                self.
+                self.reset(env)
+
+        
