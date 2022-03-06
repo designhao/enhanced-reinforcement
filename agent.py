@@ -40,4 +40,4 @@ class Agent:
                 if self.converged():
                     break
                 else:
- 
+                    
