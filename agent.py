@@ -41,3 +41,5 @@ class Agent:
                     break
                 else:
                     self.prev_utility_table = copy.deepcopy(self.utility_table)
+
+                l
