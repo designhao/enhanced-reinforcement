@@ -40,4 +40,4 @@ class Agent:
                 if self.converged():
                     break
                 else:
-                    self.prev_utility_table = copy.d
+                    self.prev_utility_table = copy.deepcopy(self.utility_table)
