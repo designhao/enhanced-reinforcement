@@ -42,4 +42,4 @@ class Agent:
                 else:
                     self.prev_utility_table = copy.deepcopy(self.utility_table)
 
-                l
+                logging.getLogger
