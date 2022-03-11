@@ -42,4 +42,5 @@ class Agent:
                 else:
                     self.prev_utility_table = copy.deepcopy(self.utility_table)
 
-                logging.getLogger().debug("Episode %d: convergence %f", executions, self.co
+                logging.getLogger().debug("Episode %d: convergence %f", executions, self.convergence)
+
