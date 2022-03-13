@@ -44,4 +44,6 @@ class Agent:
 
                 logging.getLogger().debug("Episode %d: convergence %f", executions, self.convergence)
 
-        logging.getLogger().info("Episode %d: converged at %f", executions, self.conver
+        logging.getLogger().info("Episode %d: converged at %f", executions, self.convergence)
+
+    def converged(s
