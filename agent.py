@@ -48,4 +48,4 @@ class Agent:
 
     def converged(self):
         """
-        Return True if the cha
+        Return True if the change between previou
