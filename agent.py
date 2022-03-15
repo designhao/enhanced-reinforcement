@@ -48,4 +48,4 @@ class Agent:
 
     def converged(self):
         """
-        Return True if the change between previous util table a
+        Return True if the change between previous util table and current util tab
