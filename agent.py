@@ -49,4 +49,4 @@ class Agent:
     def converged(self):
         """
         Return True if the change between previous util table and current util table
-        are smaller than the conve
+        are smaller than the convergence_threshold.
