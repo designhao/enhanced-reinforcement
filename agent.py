@@ -51,4 +51,4 @@ class Agent:
         Return True if the change between previous util table and current util table
         are smaller than the convergence_threshold.
         """
-        s
+        self.convergence
