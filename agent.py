@@ -52,4 +52,4 @@ class Agent:
         are smaller than the convergence_threshold.
         """
         self.convergence = self.convergence_metric()
-        return self.convergence < CO
+        return self.convergence < CONVERGENCE_THRESHOLD
