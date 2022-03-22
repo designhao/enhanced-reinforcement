@@ -54,4 +54,5 @@ class Agent:
         self.convergence = self.convergence_metric()
         return self.convergence < CONVERGENCE_THRESHOLD
 
-    def run(self,
+    def run(self, env):
+        "
