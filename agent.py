@@ -58,4 +58,4 @@ class Agent:
         """
         Execute actions.
         """
-        self.a, _
+        self.a, _ = self.choose_act
