@@ -56,4 +56,6 @@ class Agent:
 
     def run(self, env):
         """
-        Execut
+        Execute actions.
+        """
+ 
