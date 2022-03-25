@@ -58,4 +58,5 @@ class Agent:
         """
         Execute actions.
         """
-        self.a, _ = self.choose_act
+        self.a, _ = self.choose_action(env, self.s)
+    
