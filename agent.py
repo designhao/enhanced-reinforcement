@@ -58,4 +58,4 @@ class Agent:
         """
         Execute actions.
         """
- 
+        self.a, _
