@@ -60,4 +60,4 @@ class Agent:
         """
         self.a, _ = self.choose_action(env, self.s)
         self.s, self.r = env.execute(self.a)
-        
+        return self.a, self.s
