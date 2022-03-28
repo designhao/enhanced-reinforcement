@@ -62,4 +62,6 @@ class Agent:
         self.s, self.r = env.execute(self.a)
         return self.a, self.s
 
-    def run_train(se
+    def run_train(self, env):
+        """
+ 
