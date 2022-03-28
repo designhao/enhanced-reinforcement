@@ -64,4 +64,5 @@ class Agent:
 
     def run_train(self, env):
         """
-        Execute ac
+        Execute actions and learn.
+    
