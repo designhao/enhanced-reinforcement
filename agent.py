@@ -66,4 +66,5 @@ class Agent:
         """
         Execute actions and learn.
         """
-        self.run
+        self.run(env)
+        i
