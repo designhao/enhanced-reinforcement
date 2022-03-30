@@ -68,4 +68,4 @@ class Agent:
         """
         self.run(env)
         if self.prev_s is not None:
-    
+            self.update
