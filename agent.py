@@ -67,4 +67,5 @@ class Agent:
         Execute actions and learn.
         """
         self.run(env)
-        if self.prev_s
+        if self.prev_s is not None:
+    
