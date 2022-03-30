@@ -68,4 +68,6 @@ class Agent:
         """
         self.run(env)
         if self.prev_s is not None:
-            self.update
+            self.update_utility(env)
+
+    def
