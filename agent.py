@@ -70,4 +70,5 @@ class Agent:
         if self.prev_s is not None:
             self.update_utility(env)
 
-    def choose_action(self, 
+    def choose_action(self, env, state):
+        """
