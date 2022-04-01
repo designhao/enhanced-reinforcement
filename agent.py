@@ -72,4 +72,4 @@ class Agent:
 
     def choose_action(self, env, state):
         """
-        Return an action and the le
+        Return an action and the learned reward by maximizin
