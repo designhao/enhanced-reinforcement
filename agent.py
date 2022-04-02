@@ -74,4 +74,4 @@ class Agent:
         """
         Return an action and the learned reward by maximizing reward.
         """
-       
+        return argmax(ACTIONS, la
