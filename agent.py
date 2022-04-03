@@ -74,4 +74,4 @@ class Agent:
         """
         Return an action and the learned reward by maximizing reward.
         """
-        return argmax(ACTIONS, lambda action: 
+        return argmax(ACTIONS, lambda action: self.q_value(s
