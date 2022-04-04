@@ -76,4 +76,5 @@ class Agent:
         """
         return argmax(ACTIONS, lambda action: self.q_value(state, action))
 
-    def convergence_m
+    def convergence_metric(self):
+        ""
