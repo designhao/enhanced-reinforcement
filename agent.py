@@ -78,4 +78,5 @@ class Agent:
 
     def convergence_metric(self):
         """
-        Return the conv
+        Return the convergence metric.
+        """
