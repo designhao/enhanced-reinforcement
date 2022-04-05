@@ -80,4 +80,4 @@ class Agent:
         """
         Return the convergence metric.
         """
-        pre
+        prev = sum(self.prev_ut
