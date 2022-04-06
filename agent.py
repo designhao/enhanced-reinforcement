@@ -81,3 +81,4 @@ class Agent:
         Return the convergence metric.
         """
         prev = sum(self.prev_utility_table.values())
+        curr = su
