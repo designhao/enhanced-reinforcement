@@ -84,4 +84,4 @@ class Agent:
         curr = sum(self.utility_table.values())
         return math.sqrt(abs(curr - prev))
 
-    def 
+    def q_value(self, state, a
