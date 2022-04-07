@@ -82,4 +82,6 @@ class Agent:
         """
         prev = sum(self.prev_utility_table.values())
         curr = sum(self.utility_table.values())
-        return math.sqrt(abs(curr - p
+        return math.sqrt(abs(curr - prev))
+
+    def 
