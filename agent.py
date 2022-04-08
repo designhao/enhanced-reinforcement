@@ -86,3 +86,5 @@ class Agent:
 
     def q_value(self, state, action):
         return 0
+
+    def upda
