@@ -88,4 +88,4 @@ class Agent:
         return 0
 
     def update_utility(self):
-    
+        pass
