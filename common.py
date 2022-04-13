@@ -3,4 +3,4 @@
 import os, sys, time, inspect, logging
 
 # Constants
-PATH        
+PATH        = os.path.dirname
