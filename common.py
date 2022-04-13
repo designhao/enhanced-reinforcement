@@ -2,4 +2,5 @@
 # Four spaces as indentation [no tabs]
 import os, sys, time, inspect, logging
 
-# Consta
+# Constants
+PATH        
