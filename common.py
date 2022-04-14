@@ -4,4 +4,4 @@ import os, sys, time, inspect, logging
 
 # Constants
 PATH        = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-DEFAULT
+DEFAULT_MAP = "maps/easy.txt"
