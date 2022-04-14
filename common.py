@@ -3,4 +3,4 @@
 import os, sys, time, inspect, logging
 
 # Constants
-PATH        = os.path.dirname(os.path.abspath(inspec
+PATH        = os.path.dirname(os.path.abspath(inspect.getfile(inspect.
