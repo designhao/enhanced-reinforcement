@@ -6,4 +6,5 @@ import os, sys, time, inspect, logging
 PATH        = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 DEFAULT_MAP = "maps/easy.txt"
 HIGH_PROB   = 0.7
-LOW_PROB    = 0.
+LOW_PROB    = 0.15
+DEBUG       = lambda:
