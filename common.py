@@ -10,4 +10,5 @@ LOW_PROB    = 0.15
 DEBUG       = lambda: logging.getLogger().level == logging.DEBUG
 IS_DEBUG    = DEBUG()
 
-MAX_TRAINING_E
+MAX_TRAINING_EPISODES = 10000
+CONVERGE
