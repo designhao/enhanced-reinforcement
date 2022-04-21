@@ -18,4 +18,4 @@ FPS         = 60
 
 # Image files
 PLAYER        = "link.bmp"
-PLAY
+PLAYER_DEBUG  = "link_deb
