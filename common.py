@@ -17,4 +17,5 @@ CONVERGENCE_THRESHOLD = 0.1
 FPS         = 60
 
 # Image files
-PLAYER  
+PLAYER        = "link.bmp"
+PLAY
