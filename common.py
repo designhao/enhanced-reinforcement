@@ -14,4 +14,6 @@ MAX_TRAINING_EPISODES = 10000
 CONVERGENCE_THRESHOLD = 0.1
 
 # Frames per second (more means faster)
-FPS   
+FPS         = 60
+
+# Im
