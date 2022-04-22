@@ -18,4 +18,5 @@ FPS         = 60
 
 # Image files
 PLAYER        = "link.bmp"
-PLAYER_DEBUG  = "link_deb
+PLAYER_DEBUG  = "link_debug.bmp"
+TILESET       = "l
