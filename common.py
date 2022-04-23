@@ -23,4 +23,5 @@ TILESET       = "link_tiles.bmp"
 TILESET_DEBUG = "link_tiles_debug.bmp"
 
 # Map (map values must match the following)
-TILE_INIT
+TILE_INIT         = 9
+T
