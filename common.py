@@ -22,4 +22,5 @@ PLAYER_DEBUG  = "link_debug.bmp"
 TILESET       = "link_tiles.bmp"
 TILESET_DEBUG = "link_tiles_debug.bmp"
 
-# Map (map values must match th
+# Map (map values must match the following)
+TILE_INIT
