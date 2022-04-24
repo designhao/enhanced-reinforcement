@@ -24,4 +24,5 @@ TILESET_DEBUG = "link_tiles_debug.bmp"
 
 # Map (map values must match the following)
 TILE_INIT         = 9
+TILE_CLEAR        = 0
 T
