@@ -26,4 +26,5 @@ TILESET_DEBUG = "link_tiles_debug.bmp"
 TILE_INIT         = 9
 TILE_CLEAR        = 0
 TILE_CLOSED       = 1
-TILE_CHEST_CLOS
+TILE_CHEST_CLOSED = 2
+TILE_CHEST
