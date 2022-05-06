@@ -36,4 +36,5 @@ ALL               = [TILE_INIT, TILE_CLEAR, TILE_CLOSED, TILE_CHEST_CLOSED, TILE
 
 # Tileset (pixels of image)
 ZOOM        = 2
-TILE_WID
+TILE_WIDTH  = 16 * ZOOM
+TILE
