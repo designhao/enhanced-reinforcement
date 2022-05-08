@@ -39,4 +39,4 @@ ZOOM        = 2
 TILE_WIDTH  = 16 * ZOOM
 TILE_HEIGHT = 16 * ZOOM
 
-# Player (direc
+# Player (directions in the imag
