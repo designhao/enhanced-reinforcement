@@ -39,4 +39,5 @@ ZOOM        = 2
 TILE_WIDTH  = 16 * ZOOM
 TILE_HEIGHT = 16 * ZOOM
 
-# Player (directions in the imag
+# Player (directions in the image)
+MOVE_RIGHT  = 0
