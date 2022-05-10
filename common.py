@@ -42,4 +42,5 @@ TILE_HEIGHT = 16 * ZOOM
 # Player (directions in the image)
 MOVE_RIGHT  = 0
 MOVE_LEFT   = 1
-MOVE_UP 
+MOVE_UP     = 2
+MOVE_
