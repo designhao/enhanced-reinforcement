@@ -46,4 +46,4 @@ MOVE_UP     = 2
 MOVE_DOWN   = 3
 NO_OP   = 4
 
-# Pixel
+# Pixels per frame, must m
