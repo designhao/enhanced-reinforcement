@@ -46,4 +46,4 @@ MOVE_UP     = 2
 MOVE_DOWN   = 3
 NO_OP   = 4
 
-# Pixels per frame, must match tile size (TIL
+# Pixels per frame, must match tile size (TILE_WIDTH % MOVE_SPE
