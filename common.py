@@ -49,4 +49,5 @@ NO_OP   = 4
 # Pixels per frame, must match tile size (TILE_WIDTH % MOVE_SPEED == 0 and TILE_HEIGHT % MOVE_SPEED == 0)
 MOVE_SPEED  = 4 * ZOOM
 
-# Available ac
+# Available actions
+ACTIONS = [MOVE_RI
