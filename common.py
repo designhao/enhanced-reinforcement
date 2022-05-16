@@ -50,4 +50,4 @@ NO_OP   = 4
 MOVE_SPEED  = 4 * ZOOM
 
 # Available actions
-ACTIONS = [MOVE_RI
+ACTIONS = [MOVE_RIGHT, MOVE_LEFT,
