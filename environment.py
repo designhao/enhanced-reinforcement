@@ -1,3 +1,4 @@
 #!/usr/bin/env python
 # Four spaces as indentation [no tabs]
-import sys, random, time, l
+import sys, random, time, logging
+from common imp
