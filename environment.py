@@ -3,4 +3,6 @@
 import sys, random, time, logging
 from common import *
 from util import *
-from l
+from link import *
+
+class
