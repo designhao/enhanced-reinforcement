@@ -7,4 +7,4 @@ from link import *
 
 class Environment:
 
-    def __init__(se
+    def __init__(self, x, y, map_data
