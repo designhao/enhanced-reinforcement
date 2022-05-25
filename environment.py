@@ -5,4 +5,6 @@ from common import *
 from util import *
 from link import *
 
-class Environme
+class Environment:
+
+    def __init__(se
