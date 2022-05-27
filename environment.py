@@ -9,4 +9,4 @@ class Environment:
 
     def __init__(self, x, y, map_data, map_width, map_height, debug=False):
 
-        self.
+        self.init = self.state = (x, 
