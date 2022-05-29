@@ -12,4 +12,5 @@ class Environment:
         self.init = self.state = (x, y)
         
         self.map_data   = map_data
-        self.map_width  =
+        self.map_width  = map_width
+        
