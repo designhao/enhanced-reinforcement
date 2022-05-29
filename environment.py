@@ -11,4 +11,4 @@ class Environment:
 
         self.init = self.state = (x, y)
         
-    
+        self.map_da
