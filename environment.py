@@ -15,4 +15,4 @@ class Environment:
         self.map_width  = map_width
         self.map_height = map_height
 
-        self
+        self.rupees     
