@@ -13,4 +13,6 @@ class Environment:
         
         self.map_data   = map_data
         self.map_width  = map_width
-        self.map_height = 
+        self.map_height = map_height
+
+        self
