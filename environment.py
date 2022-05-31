@@ -17,4 +17,5 @@ class Environment:
 
         self.rupees     = []
         
-        self.debug    
+        self.debug      = debug
+   
