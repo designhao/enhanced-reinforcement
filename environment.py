@@ -19,4 +19,5 @@ class Environment:
         
         self.debug      = debug
         
-        self.rewa
+        self.rewards    = {
+      
