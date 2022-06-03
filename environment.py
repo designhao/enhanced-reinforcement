@@ -20,4 +20,5 @@ class Environment:
         self.debug      = debug
         
         self.rewards    = {
-            TILE_CLEAR     
+            TILE_CLEAR        : -1,
+      
