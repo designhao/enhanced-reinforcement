@@ -21,4 +21,5 @@ class Environment:
         
         self.rewards    = {
             TILE_CLEAR        : -1,
-            TILE_CLOSED   
+            TILE_CLOSED       : -0.1,
+          
