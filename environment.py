@@ -23,4 +23,7 @@ class Environment:
             TILE_CLEAR        : -1,
             TILE_CLOSED       : -0.1,
             TILE_CHEST_CLOSED : 50,
-            TILE_BLUE_RUPEE   : 
+            TILE_BLUE_RUPEE   : 40
+        }
+
+    def exec
