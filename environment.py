@@ -26,4 +26,4 @@ class Environment:
             TILE_BLUE_RUPEE   : 40
         }
 
-    def exec
+    def execute(self, action
