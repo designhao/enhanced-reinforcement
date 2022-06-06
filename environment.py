@@ -26,4 +26,6 @@ class Environment:
             TILE_BLUE_RUPEE   : 40
         }
 
-    def execute(self, action
+    def execute(self, action):
+        """
+    
