@@ -28,4 +28,4 @@ class Environment:
 
     def execute(self, action):
         """
-        Execute an 
+        Execute an agent's action and c
