@@ -30,4 +30,4 @@ class Environment:
         """
         Execute an agent's action and compute current state
         """
-        # 
+        # If the agent 
