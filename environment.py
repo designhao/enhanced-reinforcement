@@ -30,4 +30,4 @@ class Environment:
         """
         Execute an agent's action and compute current state
         """
-        # If the agent is in a state with a rupp
+        # If the agent is in a state with a ruppe, it turns into a TILE_CL
