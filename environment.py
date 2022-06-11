@@ -32,4 +32,5 @@ class Environment:
         """
         # If the agent is in a state with a ruppe, it turns into a TILE_CLEAR
         if self.map_data[self.state[0]][self.state[1]] == TILE_BLUE_RUPEE:
-            self.rupees.append(self.
+            self.rupees.append(self.state)
+         
