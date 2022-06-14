@@ -35,4 +35,5 @@ class Environment:
             self.rupees.append(self.state)
             self.map_data[self.state[0]][self.state[1]] = TILE_CLEAR
 
-        # If agent is in a terminal state, telep
+        # If agent is in a terminal state, teleport him
+        if self.te
