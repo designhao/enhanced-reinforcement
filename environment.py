@@ -36,4 +36,4 @@ class Environment:
             self.map_data[self.state[0]][self.state[1]] = TILE_CLEAR
 
         # If agent is in a terminal state, teleport him
-        if self.te
+        if self.terminal(self.state):
