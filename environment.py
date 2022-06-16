@@ -39,4 +39,4 @@ class Environment:
         if self.terminal(self.state):
             self.reset()
         else:
-            self
+            self.state = self.com
