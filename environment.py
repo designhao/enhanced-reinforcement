@@ -37,4 +37,5 @@ class Environment:
 
         # If agent is in a terminal state, teleport him
         if self.terminal(self.state):
-            self.re
+            self.reset()
+        else:
