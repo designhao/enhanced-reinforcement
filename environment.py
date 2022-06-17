@@ -39,4 +39,4 @@ class Environment:
         if self.terminal(self.state):
             self.reset()
         else:
-            self.state = self.compute_action_res
+            self.state = self.compute_action_result(self.state, act
