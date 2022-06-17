@@ -41,4 +41,4 @@ class Environment:
         else:
             self.state = self.compute_action_result(self.state, action)
 
-        return 
+        return (self.state, sel
