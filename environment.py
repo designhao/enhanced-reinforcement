@@ -43,4 +43,5 @@ class Environment:
 
         return (self.state, self.state_reward(self.state))
 
-    def reset(
+    def reset(self):
+        
