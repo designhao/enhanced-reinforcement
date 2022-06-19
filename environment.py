@@ -44,4 +44,5 @@ class Environment:
         return (self.state, self.state_reward(self.state))
 
     def reset(self):
-        
+        """
+        Reset the a
