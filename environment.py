@@ -45,4 +45,5 @@ class Environment:
 
     def reset(self):
         """
-        Reset the agent to the ini
+        Reset the agent to the initial state.
+  
