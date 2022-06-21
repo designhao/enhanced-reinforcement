@@ -48,4 +48,5 @@ class Environment:
         Reset the agent to the initial state.
         """
         self.state = self.init
-        for rupee in self.
+        for rupee in self.rupees:
+         
