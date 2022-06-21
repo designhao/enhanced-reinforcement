@@ -47,4 +47,4 @@ class Environment:
         """
         Reset the agent to the initial state.
         """
-     
+        self.state = self
