@@ -49,4 +49,4 @@ class Environment:
         """
         self.state = self.init
         for rupee in self.rupees:
-            self.map_da
+            self.map_data[rupee[0]][rupee[1
