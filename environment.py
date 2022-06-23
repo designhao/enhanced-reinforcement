@@ -50,4 +50,6 @@ class Environment:
         self.state = self.init
         for rupee in self.rupees:
             self.map_data[rupee[0]][rupee[1]] = TILE_BLUE_RUPEE
-        self.rupees 
+        self.rupees = []
+        
+  
