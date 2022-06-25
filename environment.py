@@ -52,4 +52,5 @@ class Environment:
             self.map_data[rupee[0]][rupee[1]] = TILE_BLUE_RUPEE
         self.rupees = []
         
-    def compute_action_result(self,
+    def compute_action_result(self, state, action):
+        """
