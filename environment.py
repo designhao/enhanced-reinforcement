@@ -54,4 +54,4 @@ class Environment:
         
     def compute_action_result(self, state, action):
         """
-        Compute the resultin
+        Compute the resulting state given the ac
