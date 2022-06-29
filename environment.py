@@ -56,4 +56,4 @@ class Environment:
         """
         Compute the resulting state given the action probabilities.
         """
-        successors = self.success
+        successors = self.successor_states(state,
