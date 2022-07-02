@@ -58,4 +58,5 @@ class Environment:
         """
         successors = self.successor_states(state, action)
         total = sum(w for c, w in successors)
-        r = rand
+        r = random.uniform(0, total)
+     
