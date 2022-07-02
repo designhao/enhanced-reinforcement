@@ -57,4 +57,5 @@ class Environment:
         Compute the resulting state given the action probabilities.
         """
         successors = self.successor_states(state, action)
-        total = sum(w for c, w in successo
+        total = sum(w for c, w in successors)
+        r = rand
