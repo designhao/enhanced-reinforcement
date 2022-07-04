@@ -61,4 +61,5 @@ class Environment:
         r = random.uniform(0, total)
         upto = 0
         for c, w in successors:
-            if upto + w >
+            if upto + w > r:
+             
