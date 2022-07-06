@@ -63,4 +63,5 @@ class Environment:
         for c, w in successors:
             if upto + w > r:
                 return c
-    
+            upto += w
+       
