@@ -64,4 +64,4 @@ class Environment:
             if upto + w > r:
                 return c
             upto += w
-       
+        raise Exception("F
