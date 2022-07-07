@@ -66,4 +66,4 @@ class Environment:
             upto += w
         raise Exception("Fail action")
 
-    d
+    def successor_state
