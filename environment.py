@@ -66,4 +66,6 @@ class Environment:
             upto += w
         raise Exception("Fail action")
 
-    def successor_states(self, state, action
+    def successor_states(self, state, action):
+        """
+  
