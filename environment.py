@@ -68,4 +68,5 @@ class Environment:
 
     def successor_states(self, state, action):
         """
-        Return a list with states and probs: [
+        Return a list with states and probs: [((x, y), prob), ...]
+    
