@@ -71,4 +71,4 @@ class Environment:
         Return a list with states and probs: [((x, y), prob), ...]
         """
         succ_states = []
-   
+        failprob = 0
