@@ -72,4 +72,4 @@ class Environment:
         """
         succ_states = []
         failprob = 0
-        available_states = self.
+        available_states = self.available_ac
