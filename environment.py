@@ -74,4 +74,5 @@ class Environment:
         failprob = 0
         available_states = self.available_actions(state)
 
-      
+        for a in ACTIONS:
+ 
