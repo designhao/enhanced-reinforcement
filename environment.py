@@ -75,4 +75,5 @@ class Environment:
         available_states = self.available_actions(state)
 
         for a in ACTIONS:
- 
+            
+    
