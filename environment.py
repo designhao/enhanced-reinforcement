@@ -76,4 +76,5 @@ class Environment:
 
         for a in ACTIONS:
             
-            if action == 
+            if action == a:
+           
