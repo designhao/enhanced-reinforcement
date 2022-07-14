@@ -77,4 +77,5 @@ class Environment:
         for a in ACTIONS:
             
             if action == a:
-                if action in a
+                if action in available_states:
+   
