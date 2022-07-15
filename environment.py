@@ -78,4 +78,4 @@ class Environment:
             
             if action == a:
                 if action in available_states:
-                    su
+                    succ_states.append(( 
