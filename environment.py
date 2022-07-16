@@ -79,3 +79,4 @@ class Environment:
             if action == a:
                 if action in available_states:
                     succ_states.append(( newstate(state, a), HIGH_PROB ))
+                els
