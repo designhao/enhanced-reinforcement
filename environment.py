@@ -80,4 +80,4 @@ class Environment:
                 if action in available_states:
                     succ_states.append(( newstate(state, a), HIGH_PROB ))
                 else:
-                    fail
+                    failprob += HIGH_PROB
