@@ -81,3 +81,4 @@ class Environment:
                     succ_states.append(( newstate(state, a), HIGH_PROB ))
                 else:
                     failprob += HIGH_PROB
+            elif
