@@ -82,3 +82,4 @@ class Environment:
                 else:
                     failprob += HIGH_PROB
             elif orthogonal(action, a):
+                if 
