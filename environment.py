@@ -83,4 +83,5 @@ class Environment:
                     failprob += HIGH_PROB
             elif orthogonal(action, a):
                 if a in available_states:                
-                    succ_states.append(( newstat
+                    succ_states.append(( newstate(state, a), LOW_PROB ))
+   
