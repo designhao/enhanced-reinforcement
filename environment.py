@@ -84,4 +84,4 @@ class Environment:
             elif orthogonal(action, a):
                 if a in available_states:                
                     succ_states.append(( newstate(state, a), LOW_PROB ))
-   
+                
