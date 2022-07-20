@@ -85,4 +85,4 @@ class Environment:
                 if a in available_states:                
                     succ_states.append(( newstate(state, a), LOW_PROB ))
                 else:
-                 
+                    failprob += LOW_PRO
