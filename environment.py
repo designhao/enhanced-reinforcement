@@ -87,4 +87,5 @@ class Environment:
                 else:
                     failprob += LOW_PROB
 
-        if fai
+        if failprob > 0:
+  
