@@ -88,4 +88,4 @@ class Environment:
                     failprob += LOW_PROB
 
         if failprob > 0:
-  
+            succ_state
