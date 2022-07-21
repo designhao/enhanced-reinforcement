@@ -88,4 +88,5 @@ class Environment:
                     failprob += LOW_PROB
 
         if failprob > 0:
-            succ_states.append(( state, fai
+            succ_states.append(( state, failprob ))
+          
