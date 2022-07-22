@@ -90,3 +90,4 @@ class Environment:
         if failprob > 0:
             succ_states.append(( state, failprob ))
           
+        return succ_states
