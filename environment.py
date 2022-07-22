@@ -91,3 +91,5 @@ class Environment:
             succ_states.append(( state, failprob ))
           
         return succ_states
+
+    def available_
