@@ -92,4 +92,4 @@ class Environment:
           
         return succ_states
 
-    def available_
+    def available_actions(self, s
