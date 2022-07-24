@@ -94,4 +94,4 @@ class Environment:
 
     def available_actions(self, state):
         """
-        Return list of availa
+        Return list of available actions a
