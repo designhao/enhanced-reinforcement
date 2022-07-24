@@ -93,4 +93,5 @@ class Environment:
         return succ_states
 
     def available_actions(self, state):
-    
+        """
+        
