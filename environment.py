@@ -96,4 +96,4 @@ class Environment:
         """
         Return list of available actions at state
         """
-      
+        available_ac
