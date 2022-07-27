@@ -98,4 +98,5 @@ class Environment:
         """
         available_actions = []
         succ_list = successors(state, self.map_data, self.map_width, self.map_height)
-        for succ_s
+        for succ_state in succ_list:
+  
