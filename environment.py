@@ -97,4 +97,4 @@ class Environment:
         Return list of available actions at state
         """
         available_actions = []
-        succ_list = successors(state, 
+        succ_list = successors(state, self.map_data, self.m
