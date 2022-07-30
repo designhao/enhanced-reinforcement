@@ -100,4 +100,4 @@ class Environment:
         succ_list = successors(state, self.map_data, self.map_width, self.map_height)
         for succ_state in succ_list:
             action = direction(state[0], state[1], succ_state[0], succ_state[1])
-            available_
+            available_actions.append(ac
