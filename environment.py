@@ -101,4 +101,4 @@ class Environment:
         for succ_state in succ_list:
             action = direction(state[0], state[1], succ_state[0], succ_state[1])
             available_actions.append(action)
-        retur
+        return available_a
