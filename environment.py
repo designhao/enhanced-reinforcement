@@ -103,4 +103,5 @@ class Environment:
             available_actions.append(action)
         return available_actions
 
-    def ter
+    def terminal(self, state):
+    
