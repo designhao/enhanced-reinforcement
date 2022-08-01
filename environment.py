@@ -104,4 +104,5 @@ class Environment:
         return available_actions
 
     def terminal(self, state):
-    
+        """
+      
