@@ -105,4 +105,6 @@ class Environment:
 
     def terminal(self, state):
         """
-        Return True if the state is term
+        Return True if the state is terminal
+        """
+   
