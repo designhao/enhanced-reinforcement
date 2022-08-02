@@ -107,4 +107,4 @@ class Environment:
         """
         Return True if the state is terminal
         """
-   
+        return self.map_data[s
