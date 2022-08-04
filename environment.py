@@ -109,4 +109,4 @@ class Environment:
         """
         return self.map_data[state[0]][state[1]] in TERMINAL
 
-    
+    def state_reward(sel
