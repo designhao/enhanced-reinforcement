@@ -111,4 +111,5 @@ class Environment:
 
     def state_reward(self, state):
         """
-        Return t
+        Return the state reward
+  
