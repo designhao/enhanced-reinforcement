@@ -113,4 +113,4 @@ class Environment:
         """
         Return the state reward
         """
-        retu
+        return self.rewards[sel
