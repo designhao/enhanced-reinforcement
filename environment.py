@@ -113,4 +113,4 @@ class Environment:
         """
         Return the state reward
         """
-        return self.rewards[sel
+        return self.rewards[self.map_data[
