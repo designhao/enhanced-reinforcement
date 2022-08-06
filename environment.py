@@ -112,4 +112,5 @@ class Environment:
     def state_reward(self, state):
         """
         Return the state reward
-  
+        """
+        retu
