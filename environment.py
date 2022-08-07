@@ -113,4 +113,6 @@ class Environment:
         """
         Return the state reward
         """
-        return self.rewards[self.map_data[state[0]][state[1]
+        return self.rewards[self.map_data[state[0]][state[1]]]
+
+    def sta
