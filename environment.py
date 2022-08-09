@@ -119,4 +119,4 @@ class Environment:
         """
         Return the states
         """
-        for 
+        for x in range(self.map_wi
