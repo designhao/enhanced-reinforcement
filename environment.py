@@ -120,4 +120,4 @@ class Environment:
         Return the states
         """
         for x in range(self.map_width):
-            for y
+            for y in range(self.map_height):
