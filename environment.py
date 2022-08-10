@@ -121,3 +121,4 @@ class Environment:
         """
         for x in range(self.map_width):
             for y in range(self.map_height):
+                
