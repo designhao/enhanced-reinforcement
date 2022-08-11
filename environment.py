@@ -123,4 +123,4 @@ class Environment:
             for y in range(self.map_height):
                 yield (x, y)
 
-    
+    def actions(self
