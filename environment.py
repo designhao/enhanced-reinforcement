@@ -125,4 +125,4 @@ class Environment:
 
     def actions(self):
         """
-        Return 
+        Return the actions
