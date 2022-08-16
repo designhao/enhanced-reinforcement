@@ -129,3 +129,6 @@ class Environment:
         """
         for a in ACTIONS:
             yield a
+
+
+if __name__ == "__m
