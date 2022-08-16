@@ -127,4 +127,5 @@ class Environment:
         """
         Return the actions
         """
-     
+        for a in ACTIONS:
+ 
