@@ -136,4 +136,4 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    pars
+    parser.add_argument('map', 
