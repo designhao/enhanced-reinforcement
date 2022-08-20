@@ -137,4 +137,5 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('map', nargs='?', default=DEFAULT_MAP)
-    parser.add_argument('--de
+    parser.add_argument('--debug', action='store_true')
+ 
