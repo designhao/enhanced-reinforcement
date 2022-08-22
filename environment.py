@@ -143,4 +143,4 @@ if __name__ == "__main__":
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
     else:
- 
+        logging.basicCo
