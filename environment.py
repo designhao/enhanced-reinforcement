@@ -141,4 +141,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     if args.debug:
-        logging.basicConfig(level=logging.
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+ 
