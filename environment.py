@@ -145,4 +145,6 @@ if __name__ == "__main__":
     else:
         logging.basicConfig(level=logging.INFO)
 
-    logger = loggi
+    logger = logging.getLogger()
+
+ 
