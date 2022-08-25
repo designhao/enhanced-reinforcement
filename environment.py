@@ -147,4 +147,6 @@ if __name__ == "__main__":
 
     logger = logging.getLogger()
 
-    logger.info("Loading map: %s", a
+    logger.info("Loading map: %s", args.map)  
+    
+    
