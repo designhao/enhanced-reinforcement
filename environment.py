@@ -149,4 +149,4 @@ if __name__ == "__main__":
 
     logger.info("Loading map: %s", args.map)  
     
-    sx, sy, map_data,
+    sx, sy, map_data, map_width, map_hei
