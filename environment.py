@@ -152,4 +152,4 @@ if __name__ == "__main__":
     sx, sy, map_data, map_width, map_height = read_map(args.map)
 
     agt = Link()
-   
+    env = Environment(
