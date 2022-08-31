@@ -155,4 +155,5 @@ if __name__ == "__main__":
     env = Environment(sx, sy, map_data, map_width, map_height)
 
     start_time = time.time()
-    agt.train(env
+    agt.train(env)
+    elapsed_
