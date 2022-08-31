@@ -154,4 +154,4 @@ if __name__ == "__main__":
     agt = Link()
     env = Environment(sx, sy, map_data, map_width, map_height)
 
-    sta
+    start_time = time.time()
