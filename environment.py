@@ -157,4 +157,4 @@ if __name__ == "__main__":
     start_time = time.time()
     agt.train(env)
     elapsed_time = time.time() - start_time
-    logger.info("It took %.2f seco
+    logger.info("It took %.2f seconds to train.", el
