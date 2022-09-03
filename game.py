@@ -38,3 +38,30 @@ class Game:
             screen.blit(background, (TILE_WIDTH, TILE_HEIGHT))
             screen.blit(interactive, (TILE_WIDTH, TILE_HEIGHT))
             DEBUG() and screen.blit(contour, (TILE_WIDTH, TILE_HEIGHT))
+
+            if not self.update_agent(screen):
+
+                _, new_state = self.agt.run(self.env)
+                sx, sy = new_state
+
+                if self.env.terminal((prev_x, prev_y)):
+                    # Setup Link to the initial state
+                    prev_x, prev_y = sx, sy = self.env.init
+                    self.setup_agent_pos(sx, sy)
+                else:
+                    # Get the action based on the Link new coordinates
+                    action = direction(prev_x, prev_y, sx, sy)
+                    if action is not None:
+                        self.agent_action = action
+                        prev_x, prev_y = sx, sy
+
+                around, background, interactive = self.draw_changes()
+
+            pygame.display.flip()
+            clock.tick(FPS)
+            
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    game_over = True
+                elif event.type == KEYDOWN:
+                    if event.key == K_SPACE:
