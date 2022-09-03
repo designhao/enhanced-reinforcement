@@ -65,3 +65,22 @@ class Game:
                     game_over = True
                 elif event.type == KEYDOWN:
                     if event.key == K_SPACE:
+                        if DEBUG():
+                            logging.getLogger().setLevel(logging.INFO)
+                        else:
+                            logging.getLogger().setLevel(logging.DEBUG)
+                        around, background, interactive = self.draw_changes()
+
+    def draw_changes(self):
+        """
+        Draw changes in scenario.
+        """
+        around = self.draw_around()
+        background = self.draw_map()
+        interactive = self.draw_interactive()
+        return around, background, interactive
+
+    def draw_contour(self):
+        """
+        Draw map contour.
+        """
