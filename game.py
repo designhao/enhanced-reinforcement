@@ -104,3 +104,29 @@ class Game:
                         xn, yn = s
                         d = direction(x, y, xn, yn)
                         line_from, line_to = lines[d]
+                        pygame.draw.line(contour, (255, 255, 255), line_from, line_to, border)
+
+        pygame.draw.rect(contour, (255, 255, 255), [0, 0, TILE_WIDTH * self.env.map_width, TILE_HEIGHT * self.env.map_height], 1)
+        return contour
+
+    def draw_map(self):
+        """
+        Draw map and, if on debug, q-states.
+        """
+        background = pygame.Surface((TILE_WIDTH * self.env.map_width, TILE_HEIGHT * self.env.map_height)).convert()
+        for x in xrange(self.env.map_width):
+            for y in xrange(self.env.map_height):
+                tile = self.env.map_data[x][y]
+                if not DEBUG():
+                    if tile == TILE_BLUE_RUPEE:
+                        background.blit(self.tileset[0][TILE_CLEAR], (TILE_WIDTH * x, TILE_HEIGHT * y))
+                    background.blit(self.tileset[0][tile], (TILE_WIDTH * x, TILE_HEIGHT * y))
+                    continue
+
+                x0, y0 = TILE_WIDTH * x, TILE_HEIGHT * y
+                x1, y1 = x0 + TILE_WIDTH, y0 + TILE_HEIGHT
+                xh, yh = x0 + math.floor(TILE_WIDTH / 2), y0 + math.floor(TILE_HEIGHT / 2)
+                border = 1
+
+                if tile not in VALID:
+                    pygame.draw.rect(background, (0, 0, 0), [TILE_WIDTH * x, TILE_HEIGHT * y, TILE_WIDTH, TILE_HEIGHT], 0)
