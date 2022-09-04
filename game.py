@@ -84,3 +84,23 @@ class Game:
         """
         Draw map contour.
         """
+        contour = pygame.Surface((TILE_WIDTH * self.env.map_width, TILE_HEIGHT * self.env.map_height), pygame.SRCALPHA, 32).convert_alpha()
+        for x in xrange(self.env.map_width):
+            for y in xrange(self.env.map_height):
+                tile = self.env.map_data[x][y]
+
+                x0, y0 = TILE_WIDTH * x, TILE_HEIGHT * y
+                x1, y1 = x0 + TILE_WIDTH, y0 + TILE_HEIGHT
+                border = 1
+
+                if tile not in VALID:
+                    lines = {
+                        MOVE_RIGHT: ((x1, y0), (x1, y1)),
+                        MOVE_LEFT: ((x0, y0), (x0, y1)),
+                        MOVE_DOWN: ((x0, y1), (x1, y1)),
+                        MOVE_UP: ((x0, y0), (x1, y0)),
+                    }
+                    for s in successors((x, y), self.env.map_data, self.env.map_width, self.env.map_height):
+                        xn, yn = s
+                        d = direction(x, y, xn, yn)
+                        line_from, line_to = lines[d]
