@@ -183,3 +183,32 @@ class Game:
         if DEBUG():
             around.fill((0, 0, 0))
             return around
+        for x in xrange(self.env.map_width + 2):
+            around.blit(self.tileset[0][TILE_CLOSED], (TILE_WIDTH * x, 0))
+            around.blit(self.tileset[0][TILE_CLOSED], (TILE_WIDTH * x, TILE_HEIGHT * (self.env.map_height + 1)))
+        for y in xrange(1, self.env.map_height + 2):
+            around.blit(self.tileset[0][TILE_CLOSED], (TILE_WIDTH * 0, TILE_HEIGHT * y))
+            around.blit(self.tileset[0][TILE_CLOSED], (TILE_WIDTH * (self.env.map_width + 1), TILE_HEIGHT * y))
+        return around
+
+    def scale_range(self, old_value, old_range_min, old_range_max, new_range_min, new_range_max):
+        """
+        Scale a value between ranges.
+        """
+        old_range = (old_range_max - old_range_min)  
+        new_range = (new_range_max - new_range_min)  
+        new_value = (((old_value - old_range_min) * new_range) / old_range) + new_range_min
+        return new_value
+
+    def load_image(self, filename):
+        """
+        Load image and set transparency.
+        """
+        img = pygame.image.load(os.path.join(PATH, "sprites", filename)).convert()
+        img.set_colorkey((0, 128, 128))
+        if ZOOM > 1:
+            return pygame.transform.scale(img, (img.get_width() * ZOOM, img.get_height() * ZOOM))
+        return img
+
+    def setup_tiles(self):
+        """
