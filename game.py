@@ -168,3 +168,18 @@ class Game:
             for y in xrange(self.env.map_height):
                 tile = self.env.map_data[x][y]
                 if tile in INTERACTIVE:
+                    interactive.blit(self.tileset[d][tile], (TILE_WIDTH * x, TILE_HEIGHT * y))
+        return interactive
+
+    def draw_around(self):
+        """
+        Draw walls.
+        """
+        around = pygame.Surface((
+            TILE_WIDTH * (self.env.map_width + 2),
+            TILE_HEIGHT * (self.env.map_height + 2)
+        ), pygame.SRCALPHA, 32).convert_alpha()
+
+        if DEBUG():
+            around.fill((0, 0, 0))
+            return around
