@@ -149,3 +149,22 @@ class Game:
                         #v = self.agt.return_qvalue(QValue((x,y), act))
                         #c = self.scale_range(v, 1, self.max_expl, 0, 255)
                         #print 'C: ', c
+                        #c = 120
+                        #pygame.draw.polygon(background, (c,c,c), poly, 0)
+
+        return background
+
+    def draw_interactive(self):
+        """
+        Draw interactive states.
+        """
+        interactive = pygame.Surface((
+            TILE_WIDTH * self.env.map_width,
+            TILE_HEIGHT * self.env.map_height
+        ), pygame.SRCALPHA, 32).convert_alpha()
+
+        d = int(DEBUG())
+        for x in xrange(self.env.map_width):
+            for y in xrange(self.env.map_height):
+                tile = self.env.map_data[x][y]
+                if tile in INTERACTIVE:
