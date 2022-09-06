@@ -261,3 +261,29 @@ class Game:
     def update_agent(self, surface):
         """
         Update agent animation.
+        """
+        d = int(DEBUG())
+        img = self.agent_image[d]
+
+        if self.agent_action == None:
+            subsurface = img.subsurface((0, self.agent_direction * self.agent_height, self.agent_width, self.agent_height))
+            surface.blit(subsurface, (self.agent_x + TILE_WIDTH, self.agent_y + TILE_HEIGHT))
+            return False
+
+        self.agent_direction = self.agent_action
+        if self.agent_action == MOVE_UP:
+            self.agent_y -= MOVE_SPEED
+        elif self.agent_action == MOVE_DOWN:
+            self.agent_y += MOVE_SPEED
+        elif self.agent_action == MOVE_LEFT:
+            self.agent_x -= MOVE_SPEED
+        elif self.agent_action == MOVE_RIGHT:
+            self.agent_x += MOVE_SPEED
+
+        if self.agent_x % TILE_WIDTH == 0 and self.agent_y % TILE_HEIGHT == self.agent_diff_height:
+            self.agent_action = None
+
+        self.agent_animation += 1
+        if self.agent_animation == self.agent_max_animation:
+            self.agent_animation = 0
+            self.agent_pose += 1
