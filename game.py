@@ -238,3 +238,26 @@ class Game:
         self.agent_height = self.agent_image[0].get_height() / 4
         if self.agent_height > TILE_HEIGHT:
             self.agent_diff_height = self.agent_height - TILE_HEIGHT
+        else:
+            self.agent_diff_height = 0
+
+    def compute_range(self):
+        self.min_expl = float("inf")
+        self.max_expl = float("-inf")
+        for x in range(self.env.map_width):
+            for y in range(self.env.map_height):
+                for a in ACTIONS:
+                    v = self.agt.q_value((x,y), a)
+                    self.min_expl = min(self.min_expl, v)
+                    self.max_expl = max(self.max_expl, v)
+
+    def setup_agent_pos(self, sx, sy):
+        """
+        Setup agent position for GUI.
+        """
+        self.agent_x = sx * TILE_WIDTH
+        self.agent_y = sy * TILE_HEIGHT - self.agent_diff_height
+
+    def update_agent(self, surface):
+        """
+        Update agent animation.
