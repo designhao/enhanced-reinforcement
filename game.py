@@ -212,3 +212,29 @@ class Game:
 
     def setup_tiles(self):
         """
+        Load and split tilesets.
+        """        
+        width = 5
+        self.tileset = [[], []]
+        image = self.load_image(TILESET)
+        for x in range(width):
+            self.tileset[0].append(image.subsurface((x * TILE_WIDTH, 0, TILE_WIDTH, TILE_HEIGHT)))
+        image = self.load_image(TILESET_DEBUG)
+        for x in range(width):
+            self.tileset[1].append(image.subsurface((x * TILE_WIDTH, 0, TILE_WIDTH, TILE_HEIGHT)))
+
+    def setup_agent(self):
+        """
+        Setup agent properties for GUI.
+        """
+        self.agent_action = None
+        self.agent_max_pose = 4
+        self.agent_max_animation = 8 / ZOOM
+        self.agent_animation = 0
+        self.agent_pose = 0
+        self.agent_direction = MOVE_DOWN
+        self.agent_image = [self.load_image(PLAYER), self.load_image(PLAYER_DEBUG)]
+        self.agent_width = self.agent_image[0].get_width() / self.agent_max_pose
+        self.agent_height = self.agent_image[0].get_height() / 4
+        if self.agent_height > TILE_HEIGHT:
+            self.agent_diff_height = self.agent_height - TILE_HEIGHT
