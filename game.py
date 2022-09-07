@@ -305,3 +305,22 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.debug:
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO)
+
+    logger = logging.getLogger()
+
+    logger.info("Loading map: %s", args.map)  
+    
+    sx, sy, map_data, map_width, map_height = read_map(args.map)
+
+    agt = Link()
+    env = Environment(sx, sy, map_data, map_width, map_height)
+
+    start_time = time.time()
+    agt.train(env)
+    elapsed_time = time.time() - start_time
+    logger.info("It took %.2f seconds to train.", elapsed_time)
+    Game(env, agt)
+
