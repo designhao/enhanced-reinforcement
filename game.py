@@ -287,3 +287,21 @@ class Game:
         if self.agent_animation == self.agent_max_animation:
             self.agent_animation = 0
             self.agent_pose += 1
+            if self.agent_pose == self.agent_max_pose:
+                self.agent_pose = 0
+
+        subsurface = img.subsurface((self.agent_pose * self.agent_width, self.agent_direction * self.agent_height, self.agent_width, self.agent_height))
+        surface.blit(subsurface, (self.agent_x + TILE_WIDTH, self.agent_y + TILE_HEIGHT))
+
+        return True
+
+if __name__ == "__main__":
+
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('map', nargs='?', default=DEFAULT_MAP)
+    parser.add_argument('--debug', action='store_true')
+    args = parser.parse_args()
+
+    if args.debug:
