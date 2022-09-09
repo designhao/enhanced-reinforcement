@@ -50,3 +50,23 @@ class Link(Agent):
                 logging.getLogger().debug("Episode %d: convergence %f", executions, self.convergence)
 
         logging.getLogger().info("Episode %d: converged at %f", executions, self.convergence)
+
+    def alpha(self, qv):
+        """
+        Learning rate
+        TODO: set a learning rate function or a fixed number
+        """
+        raise NotImplementedError
+        
+    
+    def reset(self, game):
+        self.p_state = self.p_action = self.p_reward = self.state = self.action = self.reward = None
+
+    def f(self, qv):
+        """
+        Exploration function
+        TODO: implement a exploration function
+        """
+        raise NotImplementedError 
+
+        
