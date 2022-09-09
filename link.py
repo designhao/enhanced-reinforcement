@@ -26,3 +26,27 @@ class Link(Agent):
     def train(self, env):
         """
         Execute MAX_TRAINING_EPISODES rounds or until converge.
+        TODO: you can change this method to log executions
+        """
+
+        logging.getLogger().debug("It will converge at %f", CONVERGENCE_THRESHOLD)
+
+        self.reset(env)
+        self.env = env
+        executions = 0
+        while executions < MAX_TRAINING_EPISODES:
+            action = self.run_train(self.env)
+            self.env.execute(action)
+            if env.terminal(self.state):
+                executions += 1
+                
+                self.reset(env)
+
+                if self.converged():
+                    break
+                else:
+                    self.prev_qtable = copy.deepcopy(self.q_values)
+
+                logging.getLogger().debug("Episode %d: convergence %f", executions, self.convergence)
+
+        logging.getLogger().info("Episode %d: converged at %f", executions, self.convergence)
