@@ -70,3 +70,25 @@ class Link(Agent):
         raise NotImplementedError 
 
         
+    def max_action(self, state):
+        """
+        Return value of the best possible action
+        TODO: implement a function to return the value of the 
+        best possible action in  a given state
+        """
+        raise NotImplementedError
+
+    def argmax(self, state):
+        """
+        Return the best possible action
+        TODO: implement a function to return the best action 
+        to a given state. Remember to use the exploration function.
+        """        
+        raise NotImplementedError
+
+
+    def make_state(self, env):
+        """
+        Using the information in the environment, a state with the relevant information is built
+        TODO: create a state represenstation
+        """
