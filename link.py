@@ -110,3 +110,20 @@ class Link(Agent):
         self.action = self.argmax(self.make_state(env))
         self.state, self.reward = env.execute(self.action)
         return self.action, self.state
+
+
+    def run_train(self, env):
+        """
+        Execute actions and learn. 
+        TODO: Implement Q-Learning here
+        """
+        self.state = self.make_state(env)
+        raise NotImplementedError
+
+    def convergence_metric(self):
+        """
+        Return the convergence metric.
+        """
+        prev = sum(self.prev_qtable.values())
+        curr = sum(self.q_values.values())
+        return math.sqrt(abs(curr - prev))
