@@ -92,3 +92,21 @@ class Link(Agent):
         Using the information in the environment, a state with the relevant information is built
         TODO: create a state represenstation
         """
+        raise NotImplementedError
+
+
+    def converged(self):
+        """
+        Return True if the change between previous util table and current util table
+        are smaller than the convergence_threshold.
+        """
+        self.convergence = self.convergence_metric()
+        return self.convergence < CONVERGENCE_THRESHOLD
+
+    def run(self, env):
+        """
+        Execute the best action without applying learning.
+        """
+        self.action = self.argmax(self.make_state(env))
+        self.state, self.reward = env.execute(self.action)
+        return self.action, self.state
