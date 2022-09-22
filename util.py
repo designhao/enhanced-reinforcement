@@ -22,3 +22,22 @@ def read_map(filename):
                 if cell == TILE_INIT:
                     map_data[x][y] = TILE_CLEAR
                     sx, sy = x, y
+        return (sx, sy, map_data, map_width, map_height)
+
+def successors(state, map_data, map_width, map_height):
+    """
+    Fetch valid successors for state.
+    """
+    n = []
+    x, y = state
+    if x - 1 >= 0 and map_data[x-1][y] != TILE_CLOSED:
+        n.append((x-1,y))
+    if x + 1 < map_width and map_data[x+1][y] != TILE_CLOSED:
+        n.append((x+1,y))
+    if y - 1 >= 0 and map_data[x][y-1] != TILE_CLOSED:
+        n.append((x,y-1))
+    if y + 1 < map_height and map_data[x][y+1] != TILE_CLOSED:
+        n.append((x,y+1))
+    return n
+
+def direction(x1, y1, x2, y2):
