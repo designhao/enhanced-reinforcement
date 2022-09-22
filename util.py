@@ -41,3 +41,24 @@ def successors(state, map_data, map_width, map_height):
     return n
 
 def direction(x1, y1, x2, y2):
+    """
+    Define which direction based on positions.
+    """
+    if x1 < x2:
+        return MOVE_RIGHT
+    elif x1 > x2:
+        return MOVE_LEFT
+    elif y1 < y2:
+        return MOVE_DOWN
+    elif y1 > y2:
+    	return MOVE_UP
+    else:
+        return None
+    raise Exception("Unknown direction", x1, y1, x2, y2)
+
+def newstate(state, action):
+    """
+    Apply an action to a state.
+    """
+    if action == MOVE_UP:
+        return (state[0], state[1]-1)
