@@ -62,3 +62,27 @@ def newstate(state, action):
     """
     if action == MOVE_UP:
         return (state[0], state[1]-1)
+    if action == MOVE_DOWN:
+        return (state[0], state[1]+1)
+    if action == MOVE_LEFT:
+        return (state[0]-1, state[1])
+    if action == MOVE_RIGHT:
+        return (state[0]+1, state[1])
+    raise Exception("Unknown direction", x1, y1, x2, y2)
+
+def orthogonal(action1, action2):
+    """
+    Check if action vectors are perpendicular.
+    """
+    vertical1 = action1 in [MOVE_UP, MOVE_DOWN]
+    vertical2 = action2 in [MOVE_UP, MOVE_DOWN]
+    return vertical1 != vertical2
+
+def debug_map(env, stop=False):
+    """
+    Debug current environment.
+    """
+    for y in range(env.map_height):
+        for x in range(env.map_width):
+            if (x, y) == env.state:
+                sys.stdout.write('X')
