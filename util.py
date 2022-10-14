@@ -86,3 +86,17 @@ def debug_map(env, stop=False):
         for x in range(env.map_width):
             if (x, y) == env.state:
                 sys.stdout.write('X')
+            elif (x, y) == env.init:
+                sys.stdout.write('@')
+            else:
+                if env.map_data[x][y] == TILE_CLOSED:
+                    sys.stdout.write(u"\u2588")
+                elif env.map_data[x][y] == TILE_CLEAR:
+                    sys.stdout.write(' ')
+                elif env.map_data[x][y] in TERMINAL:
+                    sys.stdout.write('#')
+                else:
+                    sys.stdout.write(str(env.map_data[x][y]))
+        sys.stdout.write('\n')
+    sys.stdout.write('\n')
+    stop and raw_input()
