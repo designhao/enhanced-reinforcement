@@ -100,3 +100,11 @@ def debug_map(env, stop=False):
         sys.stdout.write('\n')
     sys.stdout.write('\n')
     stop and raw_input()
+
+def argmax(seq, fn):
+    best = best_score = None;
+    for x in seq:
+        x_score = fn(x)
+        if x_score > best_score:
+            best, best_score = x, x_score
+    return best, best_score
