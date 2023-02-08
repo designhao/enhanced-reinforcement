@@ -7,4 +7,4 @@ The following files are essential to build and design your reinforcement learnin
 - [util.py](util.py) with utility functions
 - [game.py](game.py) with graphic display related calls
 - [environment.py](environment.py) features behavioural aspects of the scenario
-- [agent.
+- [agent.py](agent.py) inc
