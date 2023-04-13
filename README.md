@@ -8,4 +8,4 @@ The following files are essential to build and design your reinforcement learnin
 - [game.py](game.py) with graphic display related calls
 - [environment.py](environment.py) features behavioural aspects of the scenario
 - [agent.py](agent.py) includes components for training like environment interaction and previous state
-- [link.py](link.py) holds skeleton of methods for you to develop (This
+- [link.py](link.py) holds skeleton of methods for you to develop (This is the only file you'r
