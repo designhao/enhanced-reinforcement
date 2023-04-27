@@ -10,4 +10,4 @@ The following files are essential to build and design your reinforcement learnin
 - [agent.py](agent.py) includes components for training like environment interaction and previous state
 - [link.py](link.py) holds skeleton of methods for you to develop (This is the only file you're allowed to modify)
 
-We have also
+We have also got a illustrativ
