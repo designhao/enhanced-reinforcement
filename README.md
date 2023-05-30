@@ -14,4 +14,4 @@ We have also got a illustrative GIF to better explain the scenario.
 
 ## How to Execute:
 
-On enabling the `--debug` flag, verbose output of training and GUI's Q(s, a) colouring 
+On enabling the `--debug` flag, verbose output of training and GUI's Q(s, a) colouring can be visualised.
