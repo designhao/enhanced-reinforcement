@@ -17,4 +17,5 @@ We have also got a illustrative GIF to better explain the scenario.
 On enabling the `--debug` flag, verbose output of training and GUI's Q(s, a) colouring can be visualised. The GUI execution can alternate between standard and debug modes via SPACE key.
 
 To test your code and determine the convergence episode, the environment.py file can be utilised:
-`
+```
+python environm
