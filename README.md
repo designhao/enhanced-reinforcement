@@ -18,4 +18,4 @@ On enabling the `--debug` flag, verbose output of training and GUI's Q(s, a) col
 
 To test your code and determine the convergence episode, the environment.py file can be utilised:
 ```
-python environm
+python environment.py [--debug] [Map]
