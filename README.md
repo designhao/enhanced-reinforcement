@@ -21,4 +21,6 @@ To test your code and determine the convergence episode, the environment.py file
 python environment.py [--debug] [Map]
 ```
 
-Post-convergence, to analyse the solution provided by your algorithm, initiate the GUI in debug mode and observe
+Post-convergence, to analyse the solution provided by your algorithm, initiate the GUI in debug mode and observe the colours:
+```
+pyt
