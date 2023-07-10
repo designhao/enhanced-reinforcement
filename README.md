@@ -25,4 +25,4 @@ Post-convergence, to analyse the solution provided by your algorithm, initiate t
 ```
 python game.py [--debug] [Map]
 ```
-Bright col
+Bright colours depict preferred
