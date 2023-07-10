@@ -23,4 +23,4 @@ python environment.py [--debug] [Map]
 
 Post-convergence, to analyse the solution provided by your algorithm, initiate the GUI in debug mode and observe the colours:
 ```
-pyt
+python game.py [--debug] [Map]
