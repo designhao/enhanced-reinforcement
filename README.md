@@ -25,4 +25,4 @@ Post-convergence, to analyse the solution provided by your algorithm, initiate t
 ```
 python game.py [--debug] [Map]
 ```
-Bright colours depict preferred directions, as a con
+Bright colours depict preferred directions, as a consequence of the learnin
