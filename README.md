@@ -27,4 +27,6 @@ python game.py [--debug] [Map]
 ```
 Bright colours depict preferred directions, as a consequence of the learning phase.
 
-## What to Im
+## What to Implement:
+
+The file [
