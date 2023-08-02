@@ -29,4 +29,4 @@ Bright colours depict preferred directions, as a consequence of the learning pha
 
 ## What to Implement:
 
-The file [link.py](link.py) provides an elementary structure to establish your active reinforce
+The file [link.py](link.py) provides an elementary structure to establish your active reinforcement learning algorit
