@@ -32,4 +32,4 @@ Bright colours depict preferred directions, as a consequence of the learning pha
 The file [link.py](link.py) provides an elementary structure to establish your active reinforcement learning algorithm.
 
 During the training phase, the following steps take place:
-- An acti
+- An action is chosen
