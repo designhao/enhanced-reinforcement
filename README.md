@@ -33,4 +33,4 @@ The file [link.py](link.py) provides an elementary structure to establish your a
 
 During the training phase, the following steps take place:
 - An action is chosen and implemented in the environment
-- Rewards are verified and learning about the 
+- Rewards are verified and learning about the executed action takes
