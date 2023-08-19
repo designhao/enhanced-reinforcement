@@ -35,4 +35,6 @@ During the training phase, the following steps take place:
 - An action is chosen and implemented in the environment
 - Rewards are verified and learning about the executed action takes place (via a utility table)
 - Upon reaching a terminal state, the convergence metric is evaluated
-- Depending on whether it achieves convergence, the training either stops or the utility table's previous state is stored for another training ep
+- Depending on whether it achieves convergence, the training either stops or the utility table's previous state is stored for another training episode.
+
+In the prov
