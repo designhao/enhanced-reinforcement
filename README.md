@@ -37,4 +37,4 @@ During the training phase, the following steps take place:
 - Upon reaching a terminal state, the convergence metric is evaluated
 - Depending on whether it achieves convergence, the training either stops or the utility table's previous state is stored for another training episode.
 
-In the provided skeleton, you are respon
+In the provided skeleton, you are responsible for developing t
